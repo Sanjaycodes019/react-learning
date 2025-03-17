@@ -4,8 +4,18 @@ import "./App.css";
 function App() {
   const [counter, setCounter] = useState(0);
 
-  const addValue = () => setCounter(counter + 1);
-  const subValue = () => setCounter(counter - 1);
+
+  function addValue() {
+    if(counter < 20) {
+    setCounter(counter + 1); // Simple state update
+    }
+  }
+
+  function subValue() {
+    if (counter > 0) {
+      setCounter(counter - 1); // Stops at 0
+    }
+  }
 
   return (
     <>
