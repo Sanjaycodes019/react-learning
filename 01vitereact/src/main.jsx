@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
+import {jsx as _jsx} from "react/jsx-runtime.js"
 function MyApp(){
   return(
     <div>
