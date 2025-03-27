@@ -1,11 +1,10 @@
 import './App.css';
-import NameList from './NameList';
+import Stylesheet from './Stylesheet'
 
 function App() {
   return (
     <>
-      <NameList />
-      <h1>Hi there, I'm in Codespace</h1>
+    <Stylesheet primary={true}/>
     </>
   );
 }
